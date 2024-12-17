@@ -23,3 +23,23 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public class Example
+{
+    public int AddNumbers(int a, int b)
+    {
+        // Potential bug: incorrect addition
+        return a + b;
+    }
+
+    public void ProcessData()
+    {
+        var data = new List<int> { 1, 2, 3, 4, 5 };
+        foreach (var item in data)
+        {
+            // Poor naming convention: 'i' is not descriptive
+            var i = item * 2;
+            Console.WriteLine(i);
+        }
+    }
+}
