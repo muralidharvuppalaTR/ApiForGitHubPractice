@@ -29,7 +29,7 @@ public class Example
     public int AddNumbers(int a, int b)
     {
         // Potential bug: incorrect addition
-        return a + b;
+        return a - b;
     }
 
     public void ProcessData()
